@@ -1,13 +1,13 @@
-language: objective-c
-osx_image:
-- xcode8
-- xcode9.4
-xcode_sdk:
-- iphonesimulator8.0
-- iphonesimulator9.0
-- iphonesimulator10.0
-- iphonesimulator11.4
 matrix:
+  language: objective-c
+  osx_image:
+  - xcode8
+  - xcode9.4
+  xcode_sdk:
+  - iphonesimulator8.0
+  - iphonesimulator9.0
+  - iphonesimulator10.0
+  - iphonesimulator11.4
   include:
   - name: "BannerTableViewExample"
     project: Swift/Advanced/BannerTableViewExample/BannerTableViewExample.xcodeproj
