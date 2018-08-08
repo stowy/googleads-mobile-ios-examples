@@ -66,3 +66,4 @@ matrix:
   - name: "DFPCustomRenderingExample"
     xcode_project: Objective-C/DoubleClick/DFPCustomRenderingExample/DFPCustomRenderingExample.xcodeproj
     xcode_scheme: DFPCustomRenderingExample
+  script: xcodebuild -project "$TRAVIS_XCODE_PROJECT" -scheme "$TRAVIS_XCODE_SCHEME"
