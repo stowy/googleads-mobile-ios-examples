@@ -1,4 +1,6 @@
-# Google Mobile Ads SDK for iOS
+# Google Mobile Ads SDK for iOS 
+
+![Build Status](https://travis-ci.org/stowy/googleads-mobile-ios-examples.svg?branch=master)
 
 The Google Mobile Ads SDK is the latest generation in Google mobile advertising,
 featuring refined ad formats and streamlined APIs for access to mobile ad
