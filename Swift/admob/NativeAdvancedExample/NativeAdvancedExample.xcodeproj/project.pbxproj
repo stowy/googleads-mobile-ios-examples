@@ -7,18 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		267F0AF41CE93AA300C90CE5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 267F0AF31CE93AA300C90CE5 /* GoogleService-Info.plist */; };
 		4AEBD5701BF0109B00874961 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEBD56F1BF0109B00874961 /* AppDelegate.swift */; };
 		4AEBD5721BF0109B00874961 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEBD5711BF0109B00874961 /* ViewController.swift */; };
 		4AEBD5751BF0109B00874961 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AEBD5731BF0109B00874961 /* Main.storyboard */; };
 		4AEBD5771BF0109B00874961 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AEBD5761BF0109B00874961 /* Assets.xcassets */; };
 		4AEBD57A1BF0109B00874961 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AEBD5781BF0109B00874961 /* LaunchScreen.storyboard */; };
-		4AEC64101BFAAB9600CF6A16 /* NativeAppInstallAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AEC640C1BFAAB9600CF6A16 /* NativeAppInstallAdView.xib */; };
-		4AEC64111BFAAB9600CF6A16 /* NativeContentAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AEC640E1BFAAB9600CF6A16 /* NativeContentAdView.xib */; };
+		AEA59A4A1FBCD0DE00E6D57D /* UnifiedNativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEA59A481FBCD0DE00E6D57D /* UnifiedNativeAdView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		267F0AF31CE93AA300C90CE5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4AEBD56C1BF0109B00874961 /* NativeAdvancedExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NativeAdvancedExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AEBD56F1BF0109B00874961 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AEBD5711BF0109B00874961 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,8 +23,7 @@
 		4AEBD5761BF0109B00874961 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AEBD5791BF0109B00874961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4AEBD57B1BF0109B00874961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4AEC640D1BFAAB9600CF6A16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/NativeAppInstallAdView.xib; sourceTree = "<group>"; };
-		4AEC640F1BFAAB9600CF6A16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/NativeContentAdView.xib; sourceTree = "<group>"; };
+		AEA59A491FBCD0DE00E6D57D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/UnifiedNativeAdView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +42,6 @@
 			children = (
 				4AEBD56E1BF0109B00874961 /* NativeAdvancedExample */,
 				4AEBD56D1BF0109B00874961 /* Products */,
-				77CAAFB1A66B6A865AE904A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,24 +56,15 @@
 		4AEBD56E1BF0109B00874961 /* NativeAdvancedExample */ = {
 			isa = PBXGroup;
 			children = (
-				267F0AF31CE93AA300C90CE5 /* GoogleService-Info.plist */,
 				4AEBD56F1BF0109B00874961 /* AppDelegate.swift */,
 				4AEBD5711BF0109B00874961 /* ViewController.swift */,
 				4AEBD5731BF0109B00874961 /* Main.storyboard */,
 				4AEBD5781BF0109B00874961 /* LaunchScreen.storyboard */,
-				4AEC640C1BFAAB9600CF6A16 /* NativeAppInstallAdView.xib */,
-				4AEC640E1BFAAB9600CF6A16 /* NativeContentAdView.xib */,
+				AEA59A481FBCD0DE00E6D57D /* UnifiedNativeAdView.xib */,
 				4AEBD5761BF0109B00874961 /* Assets.xcassets */,
 				4AEBD57B1BF0109B00874961 /* Info.plist */,
 			);
 			path = NativeAdvancedExample;
-			sourceTree = "<group>";
-		};
-		77CAAFB1A66B6A865AE904A3 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,7 +99,7 @@
 				TargetAttributes = {
 					4AEBD56B1BF0109B00874961 = {
 						CreatedOnToolsVersion = 7.1;
-						LastSwiftMigration = 0810;
+						LastSwiftMigration = 0900;
 					};
 				};
 			};
@@ -142,10 +128,8 @@
 			files = (
 				4AEBD57A1BF0109B00874961 /* LaunchScreen.storyboard in Resources */,
 				4AEBD5771BF0109B00874961 /* Assets.xcassets in Resources */,
-				4AEC64101BFAAB9600CF6A16 /* NativeAppInstallAdView.xib in Resources */,
-				4AEC64111BFAAB9600CF6A16 /* NativeContentAdView.xib in Resources */,
 				4AEBD5751BF0109B00874961 /* Main.storyboard in Resources */,
-				267F0AF41CE93AA300C90CE5 /* GoogleService-Info.plist in Resources */,
+				AEA59A4A1FBCD0DE00E6D57D /* UnifiedNativeAdView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,20 +164,12 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		4AEC640C1BFAAB9600CF6A16 /* NativeAppInstallAdView.xib */ = {
+		AEA59A481FBCD0DE00E6D57D /* UnifiedNativeAdView.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4AEC640D1BFAAB9600CF6A16 /* Base */,
+				AEA59A491FBCD0DE00E6D57D /* Base */,
 			);
-			name = NativeAppInstallAdView.xib;
-			sourceTree = "<group>";
-		};
-		4AEC640E1BFAAB9600CF6A16 /* NativeContentAdView.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4AEC640F1BFAAB9600CF6A16 /* Base */,
-			);
-			name = NativeContentAdView.xib;
+			name = UnifiedNativeAdView.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -300,6 +276,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.google.NativeAdvancedExample;
 				PRODUCT_NAME = NativeAdvancedExample;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -315,6 +292,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.google.NativeAdvancedExample;
 				PRODUCT_NAME = NativeAdvancedExample;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

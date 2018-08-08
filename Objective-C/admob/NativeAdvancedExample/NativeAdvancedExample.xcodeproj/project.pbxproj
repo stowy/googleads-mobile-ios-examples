@@ -7,19 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26B0F1961CE9377B00E202AF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26B0F1951CE9377B00E202AF /* GoogleService-Info.plist */; };
 		CF9335BD1B26706400DEF1B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9335BC1B26706400DEF1B4 /* main.m */; };
 		CF9335C01B26706400DEF1B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9335BF1B26706400DEF1B4 /* AppDelegate.m */; };
 		CF9335C31B26706400DEF1B4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9335C21B26706400DEF1B4 /* ViewController.m */; };
 		CF9335C61B26706400DEF1B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF9335C41B26706400DEF1B4 /* Main.storyboard */; };
 		CF9335C81B26706400DEF1B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF9335C71B26706400DEF1B4 /* Images.xcassets */; };
 		CF9335CB1B26706400DEF1B4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF9335C91B26706400DEF1B4 /* LaunchScreen.xib */; };
-		CF9335EC1B26715A00DEF1B4 /* NativeAppInstallAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF9335E61B26715A00DEF1B4 /* NativeAppInstallAdView.xib */; };
-		CF9335ED1B26715A00DEF1B4 /* NativeContentAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF9335E81B26715A00DEF1B4 /* NativeContentAdView.xib */; };
+		CF9335EC1B26715A00DEF1B4 /* UnifiedNativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF9335E61B26715A00DEF1B4 /* UnifiedNativeAdView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		26B0F1951CE9377B00E202AF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CF9335B71B26706400DEF1B4 /* NativeAdvancedExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NativeAdvancedExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF9335BB1B26706400DEF1B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF9335BC1B26706400DEF1B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -30,8 +27,7 @@
 		CF9335C51B26706400DEF1B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF9335C71B26706400DEF1B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CF9335CA1B26706400DEF1B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		CF9335E71B26715A00DEF1B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/NativeAppInstallAdView.xib; sourceTree = "<group>"; };
-		CF9335E91B26715A00DEF1B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/NativeContentAdView.xib; sourceTree = "<group>"; };
+		CF9335E71B26715A00DEF1B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/UnifiedNativeAdView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,15 +60,13 @@
 		CF9335B91B26706400DEF1B4 /* NativeAdvancedExample */ = {
 			isa = PBXGroup;
 			children = (
-				26B0F1951CE9377B00E202AF /* GoogleService-Info.plist */,
 				CF9335BE1B26706400DEF1B4 /* AppDelegate.h */,
 				CF9335BF1B26706400DEF1B4 /* AppDelegate.m */,
 				CF9335C11B26706400DEF1B4 /* ViewController.h */,
 				CF9335C21B26706400DEF1B4 /* ViewController.m */,
 				CF9335C41B26706400DEF1B4 /* Main.storyboard */,
 				CF9335C71B26706400DEF1B4 /* Images.xcassets */,
-				CF9335E61B26715A00DEF1B4 /* NativeAppInstallAdView.xib */,
-				CF9335E81B26715A00DEF1B4 /* NativeContentAdView.xib */,
+				CF9335E61B26715A00DEF1B4 /* UnifiedNativeAdView.xib */,
 				CF9335C91B26706400DEF1B4 /* LaunchScreen.xib */,
 				CF9335BA1B26706400DEF1B4 /* Supporting Files */,
 			);
@@ -147,10 +141,8 @@
 			files = (
 				CF9335C61B26706400DEF1B4 /* Main.storyboard in Resources */,
 				CF9335CB1B26706400DEF1B4 /* LaunchScreen.xib in Resources */,
-				CF9335ED1B26715A00DEF1B4 /* NativeContentAdView.xib in Resources */,
-				CF9335EC1B26715A00DEF1B4 /* NativeAppInstallAdView.xib in Resources */,
+				CF9335EC1B26715A00DEF1B4 /* UnifiedNativeAdView.xib in Resources */,
 				CF9335C81B26706400DEF1B4 /* Images.xcassets in Resources */,
-				26B0F1961CE9377B00E202AF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,20 +178,12 @@
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
-		CF9335E61B26715A00DEF1B4 /* NativeAppInstallAdView.xib */ = {
+		CF9335E61B26715A00DEF1B4 /* UnifiedNativeAdView.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CF9335E71B26715A00DEF1B4 /* Base */,
 			);
-			name = NativeAppInstallAdView.xib;
-			sourceTree = "<group>";
-		};
-		CF9335E81B26715A00DEF1B4 /* NativeContentAdView.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CF9335E91B26715A00DEF1B4 /* Base */,
-			);
-			name = NativeContentAdView.xib;
+			name = UnifiedNativeAdView.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
