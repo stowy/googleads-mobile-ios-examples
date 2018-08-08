@@ -1,7 +1,7 @@
 language: objective-c
 osx_image: xcode9.4
 xcode_sdk: iphonesimulator
-script: xcodebuild -project "$TRAVIS_XCODE_PROJECT" -scheme "$TRAVIS_XCODE_SCHEME"
+script: xcodebuild -project "$TRAVIS_XCODE_PROJECT" -scheme "$TRAVIS_XCODE_SCHEME" -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 matrix:
   include:
   - name: "BannerTableViewExample"
