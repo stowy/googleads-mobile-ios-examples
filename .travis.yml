@@ -1,10 +1,7 @@
-before_install:
-  - brew update
-  - brew outdated cocoapods || brew upgrade cocoapods
 language: objective-c
 osx_image: xcode9.4
 xcode_sdk: iphonesimulator
-script: pushd "$PROJ_DIR"; pod install; popd; xcodebuild -workspace "$TRAVIS_xcode_workspace" -scheme "$TRAVIS_XCODE_SCHEME" -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+script: pushd "$PROJ_DIR"; pod install; popd; xcodebuild -workspace "$TRAVIS_XCODE_WORKSPACE" -scheme "$TRAVIS_XCODE_SCHEME" -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 matrix:
   include:
   - name: "BannerTableViewExample"
