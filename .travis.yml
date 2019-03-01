@@ -1,7 +1,6 @@
 if: NOT type = pull_request
 language: objective-c
 osx_image: xcode9.4
-cache: cocoapods
 xcode_sdk: iphonesimulator
 env:
   global:
@@ -20,7 +19,6 @@ matrix:
   - name: "BannerTableViewExample"
     xcode_workspace: Swift/Advanced/BannerTableViewExample/BannerTableViewExample.xcworkspace
     env: PROJ_DIR="Swift/Advanced/BannerTableViewExample"
-    podfile: "${PROJ_DIR}/Podfile"
     xcode_scheme: BannerTableViewExample
   - name: "APIDemo"
     xcode_workspace: Swift/Advanced/APIDemo/APIDemo.xcworkspace
