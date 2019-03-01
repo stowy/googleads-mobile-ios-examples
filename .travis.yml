@@ -3,7 +3,6 @@ language: objective-c
 osx_image: xcode9.4
 cache: cocoapods
 xcode_sdk: iphonesimulator
-podfile: "${PROJ_DIR}/Podfile"
 env:
   global:
     - CHANGES=$(git --no-pager diff --name-only $TRAVIS_COMMIT_RANGE)
@@ -21,6 +20,7 @@ matrix:
   - name: "BannerTableViewExample"
     xcode_workspace: Swift/Advanced/BannerTableViewExample/BannerTableViewExample.xcworkspace
     env: PROJ_DIR="Swift/Advanced/BannerTableViewExample"
+    podfile: "${PROJ_DIR}/Podfile"
     xcode_scheme: BannerTableViewExample
   - name: "APIDemo"
     xcode_workspace: Swift/Advanced/APIDemo/APIDemo.xcworkspace
