@@ -9,7 +9,7 @@ install:
     fi
 script:
   - CHANGES=$(git --no-pager diff --name-only $TRAVIS_COMMIT_RANGE)
-  - echo "Changes found: \n${CHANGES}"
+  - echo "Changes found: \n$CHANGES"
   - if [[ -n "$(grep -E "(${PROJ_DIR}|\.travis\.yml)" <<< "$CHANGES")" ]]; then
       pushd "$PROJ_DIR"; pod install; popd;
       xcodebuild -workspace "$TRAVIS_XCODE_WORKSPACE" -scheme "$TRAVIS_XCODE_SCHEME" -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO;
