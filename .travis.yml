@@ -1,6 +1,6 @@
 if: branch = master
 language: objective-c
-osx_image: xcode10.2.1
+osx_image: xcode10.2
 xcode_sdk: iphonesimulator
 install:
 script:
