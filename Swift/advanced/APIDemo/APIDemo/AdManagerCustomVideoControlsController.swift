@@ -54,7 +54,7 @@ class AdManagerCustomVideoControlsController: UIViewController {
       // Loads an ad for any of unified native or custom native ads.
       var adTypes = [GADAdLoaderAdType]()
       if unifiedNativeAdSwitch.isOn {
-        adTypes.append(GADAdLoaderAdType.unifiedNative)
+        adTypes.append(.unifiedNative)
       }
       if customNativeAdSwitch.isOn {
         adTypes.append(GADAdLoaderAdType.nativeCustomTemplate)
@@ -89,7 +89,7 @@ class AdManagerCustomVideoControlsController: UIViewController {
     guard let numberOfStars = numberOfStars  else {
       return nil
     }
-    let starRating = Double(numberOfStars)
+    let starRating = Double(truncating: numberOfStars)
     var image: UIImage?
       if starRating >= 5 {
           image = UIImage(named: "stars_5")
