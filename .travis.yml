@@ -6,6 +6,7 @@ install:
 script:
   - CHANGES=$(git --no-pager diff --name-only $TRAVIS_COMMIT_RANGE)
   - echo $CHANGES;
+  - brew update;
   - if [[ -n "$(grep -Ei "(${PROJ_DIR}|\.travis\.yml)" <<< "$CHANGES")" ]]; then
       pushd "$PROJ_DIR"; sudo gem update cocoapods; pod install; popd;
       xcodebuild -workspace "$TRAVIS_XCODE_WORKSPACE" -scheme "$TRAVIS_XCODE_SCHEME" -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO;
