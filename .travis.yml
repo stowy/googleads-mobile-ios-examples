@@ -2,13 +2,7 @@ if: branch = master
 language: objective-c
 osx_image: xcode10.2
 xcode_sdk: iphonesimulator
-install:
-  - CHANGES=$(git --no-pager diff --name-only $TRAVIS_COMMIT_RANGE)
-  - echo $CHANGES;
-  - if [[ -n "$(grep -Ei "(${PROJ_DIR}|\.travis\.yml)" <<< "$CHANGES")" ]]; then
-      sudo gem install cocoapods;
-      pod repo update;
-    fi
+install: true
 script:
   - CHANGES=$(git --no-pager diff --name-only $TRAVIS_COMMIT_RANGE)
   - echo $CHANGES;
