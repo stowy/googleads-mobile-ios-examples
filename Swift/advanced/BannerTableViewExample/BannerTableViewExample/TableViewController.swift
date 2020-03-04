@@ -41,7 +41,7 @@ class TableViewController: UITableViewController, GADBannerViewDelegate {
         forCellReuseIdentifier: "BannerViewCell")
 
     // Allow row height to be determined dynamically while optimizing with an estimated row height.
-    tableView.rowHeight = UITableViewAutomaticDimension
+    tableView.rowHeight = UITableView.automaticDimension
     tableView.estimatedRowHeight = 135
 
     // Load the sample data.
@@ -62,7 +62,7 @@ class TableViewController: UITableViewController, GADBannerViewDelegate {
       let isAdLoaded = loadStateForAds[tableItem]
       return isAdLoaded == true ? adViewHeight : 0
     }
-    return UITableViewAutomaticDimension
+    return UITableView.automaticDimension
   }
 
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -148,7 +148,7 @@ class TableViewController: UITableViewController, GADBannerViewDelegate {
     if !adsToLoad.isEmpty {
       let ad = adsToLoad.removeFirst()
       let adRequest = GADRequest()
-      adRequest.testDevices = [ kGADSimulatorID ]
+      adRequest.testDevices = [ kGADSimulatorID as! String ]
       ad.load(adRequest)
     }
   }
